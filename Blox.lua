@@ -1,0 +1,6 @@
+
+_bsdata0={3608738860,"L1_B_L-_E0R2R2BALLRDD24R-LLBE5E3L31B.E0EAB1R_11.LC0_4.303ER5LR15L0.4D31LE3424RR5L.32R-A_-40D_A1DB.LR4DACLLL.A-E23.0_R1RD13B0D0C43R--2B",38429860,"\178\77\37\91\27\114\32\24\159\232\99\244\201\199\168\151\107\0\71\67\190\154\205\19\64\157\115\99\170",25267100,615377861,1782440826,2851531,2645682,40453484,"fe482d26895db7cbfd8b9378294127acab3fc690631a9a2d85fbece9ab4025de22c71bd2206d0d5ef8a1c1322636d3eb9880cfb34039eabe0027d30ded0cd6b27072ba93199ffcc041760f0ade94f4a38381c98810546af93f33bbf66adf07a8c9af809ce77e7280ba4a97458ea10ce85a6bcd3fb4f365bd7c750ac5daff020d645d62a8dcf7cf2f74a4ef34b1ca7372caa03ea60626b45bfc7257c10c3e6c660edf869eb4870cb1dc4639ad379c485edb5dd6946988dc0a647d2e596c69d71dac28b82e5f440612","\220\159\221\176\13\80\86\178\29\245\90\164\167\95\51\53\21\48\93\183\105\227\13\163"};
+local f,b,a="static_content_130525","74c74f95fd0-marbeg";pcall(function()a=readfile(f.."/init-"..b..".lua")end) if a and #a>2000 then a=loadstring(a) else a=nil; end;
+if a then return a() else pcall(makefolder,f) a=game:HttpGet("https://cdn.luarmor.net/v4_init_marbeg.lua"..(_ca920af6193 or "")) writefile(f.."/init-"..b..".lua", a); 
+pcall(function() for i,v in pairs(listfiles('./'..f)) do local m=v:match('(init[%w%-]*).lua$') if m and m~=('init-'..b) then pcall(delfile, f..'/'..m..'.lua') end end; end); return loadstring(a)() end
+  
